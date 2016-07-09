@@ -1,0 +1,33 @@
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          type: tab
+
+          fields:
+            paying_options:
+              type: section
+              title: Pay What You Want
+              underline: true
+
+              fields:
+
+                header.pay_what_you_want:
+                  type: toggle
+                  label: PLUGIN_ADMIN.ENABLED
+                  highlight: 1
+                  default: 0
+                  help: Enable "Pay What You Want" for this product
+                  options:
+                      1: PLUGIN_ADMIN.YES
+                      0: PLUGIN_ADMIN.NO
+                  validate:
+                      type: bool
+                  
+                header.pricing_suggestions:
+                  type: text
+                  label: Price
+                  help: Set your product price to the minimum amount you want to charge
+                  placeholder: Enter pricing suggestions. Ex. 2, 4, 5
+                  validate:

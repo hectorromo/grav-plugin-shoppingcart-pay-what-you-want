@@ -1,0 +1,12 @@
+{% if page.header.pay_what_you_want %}
+	
+	<div class="pwyw-container">
+		<select name="pricing-suggestions-select" id="pricing-suggestions-select">
+			{% set prices = page.header.pricing_suggestions|split(',') %}
+			{% for price in prices %}
+				<option value="{{price|ltrim(' ')|rtrim(' ')}}">{{price|ltrim(' ')|rtrim(' ')}}</option>
+			{% endfor %}
+		</select>
+	</div>
+
+{% endif %}

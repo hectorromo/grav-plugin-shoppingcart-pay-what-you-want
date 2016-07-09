@@ -1,0 +1,44 @@
+name: Shopping Cart Pay What You Want Addon
+version: 1.0.0-beta
+description: "Add Pay-What-You-Want functionality to products in Grav Shopping Cart Plugin."
+icon: shopping-cart
+author:
+  name: Hector Romo
+  email: info@hectorromo.com
+  url: http://www.hectorromo.com
+homepage: http://www.hectorromo.com
+keywords: shoppingcart, ecommerce, e-commerce, plugin, shop, cart
+readme: https://gravcart.com/docs
+bugs: https://github.com/flaviocopes/grav-plugin-shoppingcart/issues
+license: MIT
+
+testing: true
+
+dependencies:
+  - { name: shoppingcart, version: '~1.1' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    auto_select_first_option:
+      label: Auto select the first option
+      help: "If not, a placeholder option will be added asking the customer to choose an option"
+      type: toggle
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.YES
+        0: PLUGIN_ADMIN.NO
+      validate:
+        type: bool
