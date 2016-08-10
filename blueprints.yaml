@@ -30,15 +30,3 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
-
-    auto_select_first_option:
-      label: Auto select the first option
-      help: "If not, a placeholder option will be added asking the customer to choose an option"
-      type: toggle
-      highlight: 1
-      default: 0
-      options:
-        1: PLUGIN_ADMIN.YES
-        0: PLUGIN_ADMIN.NO
-      validate:
-        type: bool

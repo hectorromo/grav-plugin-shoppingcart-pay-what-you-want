@@ -27,7 +27,6 @@ form:
                   
                 header.pricing_suggestions:
                   type: text
-                  label: Price
+                  label: Price Suggestions
                   help: Set your product price to the minimum amount you want to charge
                   placeholder: Enter pricing suggestions. Ex. 2, 4, 5
-                  validate:
